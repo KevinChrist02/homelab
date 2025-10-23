@@ -1,0 +1,9 @@
+services:
+  gotify:
+    image: gotify/server
+    ports:
+      - 8080:80
+    environment:
+      GOTIFY_DEFAULTUSER_NAME: 'admin'
+    volumes:
+      - './gotify_data:/app/data'
