@@ -1,5 +1,12 @@
+# ignore all files
 *
 
+# allow all directories to look for specific files
 !/* 
 
+# allow list
 !*.yml
+!assets/
+!assets/*
+!*.md
+
