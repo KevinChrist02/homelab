@@ -1,9 +1,0 @@
-services: 
-  Nexus:
-    container_name: nexus
-    image: kevinchrist/nexus:latest
-    restart: unless-stopped
-    
-    network_mode: "host"
-    
-    command: ["gunicorn", "--bind", "0.0.0.0:5080", "src.app:app"]
